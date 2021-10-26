@@ -1,5 +1,7 @@
 import logo from './logo.svg';
+import fakeData from './ingredient.json';
 import './App.css';
+import React from "react"
 
 function App() {
   return (

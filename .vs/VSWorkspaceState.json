@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\my-app",
+    "\\my-app\\public",
+    "\\my-app\\src",
+    "\\my-app\\src\\component"
+  ],
+  "SelectedNode": "\\my-app\\src\\component\\kebabForm.js",
+  "PreviewInSolutionExplorer": false
+}

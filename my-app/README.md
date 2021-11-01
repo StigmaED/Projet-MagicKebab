@@ -1,8 +1,8 @@
 # CE PROJET N'EST PAS TERMINé
 
 # Npm 
-Vous devez ouvrir le terminal dans le dossier Projet-MagicKebab-main\my-app et faire la commande npm i 
-Puis faire : cd src
+Vous devez ouvrir le terminal dans le dossier Projet-MagicKebab-main\my-app et faire la commande npm i  
+Puis faire : cd src     
 Et enfin : npm start
 
 # Getting Started with Create React App

@@ -14,8 +14,7 @@
 }
 
 .App-header {
-    background-color: #5f5600;
-    min-height: 100vh;
+    min-height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,8 +23,6 @@
     color: white;
 }
 
-.Ingredient-card {
-}
 
     .Ingredient-card > img {
         max-width: 140px;
@@ -45,6 +42,12 @@
 }
 
 .container {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.panier {
+    border: 8px solid black;
     margin-top: auto;
     margin-bottom: auto;
 }

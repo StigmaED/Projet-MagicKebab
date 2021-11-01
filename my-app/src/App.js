@@ -1,23 +1,25 @@
 import logo from './logo.png';
 import './App.css';
 import { useState } from 'react';
+import positionElement3 from "./panier.js"
 
-function KebabForm(props) { // composant d'un kébab
-    const [pain, setPain] = useState("")
-    const [viande, setViande] = useState("") 
-    const [sto, setSto] = useState("") //Salade tomate  oignons
-    const [sauce, setSauce] = useState("")
-    const { onSubmit } = props
-}
+//function KebabForm(props) { // composant d'un kébab
+//    const [pain, setPain] = useState("")
+//    const [viande, setViande] = useState("") 
+//    const [sto, setSto] = useState("") //Salade tomate  oignons
+//    const [sauce, setSauce] = useState("")
+//    const { onSubmit } = props
+//}
 
 function App() {
     return (
         <div className="App">
 
             <header className="App-header">
+                
                 <img src={logo} className="App-logo" alt="logo" />
             </header>
-                <div className="container">
+            <div className="container">
                 <table>
                     <tr>
             <td>
@@ -117,7 +119,6 @@ function App() {
                         </td>
                     </tr>
 
-
                     <tr>
                         <p>
                            Choix des sauces
@@ -194,19 +195,22 @@ function App() {
            </table>     
             </div>
 
-            
-        <div className="Panier">
-                <table>
-                    <tr>
-                        <p> Recap</p>
-                    </tr>
-                    <tr>
-                <p> essai</p>
-                </tr>
+     
+            <div id="container-kebab-panier">
+            <h2> Les kebabs selectionnees :  </h2> 
 
-            </table>
-                </div>
+            <div class="container-recap">
+                <p> Quantite 1 - nom produit 1 </p>
+                <p> e - Supprimer article </p>
+            </div>
+
+            <div class="container-montant-total"> 
+                <p> Montant total = 190e </p>
+                <p> Vider le panier </p>
+            </div>
            
+            </div>
+        
         </div>
            
     );

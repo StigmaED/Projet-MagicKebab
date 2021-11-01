@@ -1,7 +1,9 @@
 import logo from './logo.png';
 import './App.css';
 import { useState } from 'react';
-import positionElement3 from "./panier.js"
+//import positionElement3 from "./panier.js"
+
+/* TENTATIVE DE CREATION DE LA COMPOSITION D'UN KEBAB*/
 
 //function KebabForm(props) { // composant d'un kébab
 //    const [pain, setPain] = useState("")
@@ -34,7 +36,6 @@ function App() {
 
                             <p>Pain</p>
 
-
                         </div>
                     </button>
 
@@ -44,7 +45,6 @@ function App() {
                                 alt=" Galette "
                             />
                             <p>Galette</p>
-
 
                         </div>
 
@@ -62,7 +62,6 @@ function App() {
 
                                 <p>Viande</p>
 
-
                             </div>
                         </button>
 
@@ -72,7 +71,6 @@ function App() {
                                     alt=" Tofu "
                                 />
                                 <p>Tofu</p>
-
 
                             </div>
 
@@ -91,7 +89,6 @@ function App() {
                                 />
 
                                 <p>Salade</p>
-
 
                             </div>
                         </button>
@@ -131,7 +128,6 @@ function App() {
 
                                 <p>Andalouse</p>
 
-
                             </div>
                         </button>
 
@@ -141,7 +137,6 @@ function App() {
                                     alt=" Barbecue "
                                 />
                                 <p>Barbecue</p>
-
 
                             </div>
 
@@ -153,7 +148,6 @@ function App() {
                                 />
                                 <p>Blanche</p>
 
-
                             </div>
 
                         </button>
@@ -164,7 +158,6 @@ function App() {
                                 />
                                 <p>Curry</p>
 
-
                             </div>
 
                         </button>
@@ -174,8 +167,6 @@ function App() {
                                     alt=" Ketchup "
                                 />
                                 <p>Ketchup</p>
-
-
                             </div>
 
                         </button>
@@ -185,8 +176,6 @@ function App() {
                                     alt=" Harissa "
                                 />
                                 <p>Harissa</p>
-
-
                             </div>
 
                         </button>
@@ -201,7 +190,7 @@ function App() {
 
             <div class="container-recap">
                 <p> Quantite 1 - nom produit 1 </p>
-                <p> e - Supprimer article </p>
+                <p> Supprimer article </p>
             </div>
 
             <div class="container-montant-total"> 

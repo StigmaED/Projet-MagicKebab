@@ -4,6 +4,7 @@
 Vous devez ouvrir le terminal dans le dossier Projet-MagicKebab-main\my-app et faire la commande npm i  
 Puis faire : cd src     
 Et enfin : npm start
+cela devrait vous ouvrir le projet dans votre navigateur sous le port localhost:3000
 
 # Getting Started with Create React App
 

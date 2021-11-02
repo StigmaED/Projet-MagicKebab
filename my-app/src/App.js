@@ -31,11 +31,30 @@ function App() {
 
     console.log(kebab)
     const handleGarniture = (ingredient) => {
-        Si la garniture n²est pas deja dans la liste kebaba; garniture
-        if 
-        const newkebab = { ...kebab, garniture: [ingredient] }
-        setKebab(newkebab)
-        Sinon, on ne fait rien
+      //  Si la garniture n²est pas deja dans la liste kebaba; garniture
+        if (ingredient.indexOf !== 1) {
+            const newkebab = { ...kebab, garniture: [ingredient] }
+            setKebab(newkebab)
+          
+        }
+
+       
+      //  Sinon, on ne fait rien
+        else {
+    }
+    }
+    const handleSauce = (ingredient) => {
+        //  Si la garniture n²est pas deja dans la liste kebaba; garniture
+        if (ingredient.indexOf !== 1) {
+            const newkebab = { ...kebab, sauce: [ingredient] }
+            setKebab(newkebab)
+
+        }
+
+
+        //  Sinon, on ne fait rien
+        else {
+        }
     }
 
     return (
@@ -78,7 +97,7 @@ function App() {
                         <p>
                             Viande ou Tofu ?
         </p>
-                        <button>
+                            <button onClick={() => setKebab({ ...kebab, viande: "viande" })}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/14ExbC6.jpg"
                                     alt=" Viande "
@@ -89,7 +108,7 @@ function App() {
                             </div>
                         </button>
 
-                        <button>
+                            <button onClick={() => setKebab({ ...kebab, viande: "tofu" })}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/YERLr57.jpg"
                                     alt=" Tofu "
@@ -117,7 +136,7 @@ function App() {
                             </div>
                         </button>
 
-                        <button>
+                            <button onClick={() => handleGarniture("tomates")}>
                             <div className="Ingredient-card">
                                     <img src="https://i.imgur.com/kZT7exY.jpg"
                                     alt=" tomates "
@@ -128,7 +147,7 @@ function App() {
                             </div>
 
                             </button>
-                            <button>
+                            <button onClick={() => handleGarniture("oignons")}>
                                 <div className="Ingredient-card">
                                     <img src="https://i.imgur.com/MICzYQw.jpg"
                                         alt=" oignons "
@@ -144,7 +163,7 @@ function App() {
                         <p>
                            Choix des sauces
         </p>
-                        <button>
+                        <button onClick={() => handleSauce("Andalouse")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/eNpWji5.jpg"
                                     alt=" Andalouse "
@@ -155,7 +174,7 @@ function App() {
                             </div>
                         </button>
 
-                        <button>
+                        <button onClick={() => handleSauce("Barbecue")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/wo6NbFC.jpg"
                                     alt=" Barbecue "
@@ -165,7 +184,7 @@ function App() {
                             </div>
 
                         </button>
-                        <button>
+                        <button onClick={() => handleSauce("Blanche")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/b0kNLho.jpg"
                                     alt=" Blanche "
@@ -175,7 +194,7 @@ function App() {
                             </div>
 
                         </button>
-                        <button>
+                        <button onClick={() => handleSauce("Curry")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/xIHdCMt.jpg"
                                     alt=" Curry "
@@ -185,7 +204,7 @@ function App() {
                             </div>
 
                         </button>
-                        <button>
+                        <button onClick={() => handleSauce("ketchup")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/9KUMsOR.jpg"
                                     alt=" Ketchup "
@@ -194,7 +213,7 @@ function App() {
                             </div>
 
                         </button>
-                        <button>
+                        <button onClick={() => handleSauce("Harissa")}>
                             <div className="Ingredient-card">
                                 <img src="https://i.imgur.com/wyq25bt.jpg"
                                     alt=" Harissa "

@@ -5,14 +5,6 @@ import { useState } from 'react';
 
 /* TENTATIVE DE CREATION DE LA COMPOSITION D'UN KEBAB*/
 
-//function KebabForm(props) { // composant d'un kébab
-//    const [pain, setPain] = useState("")
-//    const [viande, setViande] = useState("") 
-//    const [sto, setSto] = useState("") //Salade tomate  oignons
-//    const [sauce, setSauce] = useState("")
-//    const { onSubmit } = props
-//}
-
 const kebab = {
     pain: "pain, galette",
     viande: "viande, tofu",

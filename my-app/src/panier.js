@@ -1,7 +1,7 @@
 const positionElement3 = document.querySelector("#container-kebab-panier");
 
 // si le panier est vide
-if (/* kebab sauvegardé */ === null) {
+if (kebab === null) {
     const panierVide = `
 <div class="container-panier-vide" 
     <p> Le panier est vide</p>
@@ -12,3 +12,6 @@ if (/* kebab sauvegardé */ === null) {
 
 }
 export default positionElement3
+
+
+//Non Terminé

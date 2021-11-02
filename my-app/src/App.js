@@ -13,7 +13,31 @@ import { useState } from 'react';
 //    const { onSubmit } = props
 //}
 
+const kebab = {
+    pain: "pain, galette",
+    viande: "viande, tofu",
+    garniture: [],
+    sauce: []
+}
+
+
 function App() {
+    const [kebab, setKebab] = useState({
+        pain: undefined,
+        viande: undefined,
+        garniture: [],
+        sauce: []
+    })
+
+    console.log(kebab)
+    const handleGarniture = (ingredient) => {
+        Si la garniture n²est pas deja dans la liste kebaba; garniture
+        if 
+        const newkebab = { ...kebab, garniture: [ingredient] }
+        setKebab(newkebab)
+        Sinon, on ne fait rien
+    }
+
     return (
         <div className="App">
 
@@ -28,7 +52,7 @@ function App() {
                 <p>
                         Pain ou galette ?
         </p>
-                    <button>
+                            <button onClick={() => setKebab({ ...kebab, pain: "pain" })}>
                         <div className="Ingredient-card">
                             <img src="https://i.imgur.com/C0YORKY.jpeg"
                                 alt=" Pain "
@@ -39,7 +63,7 @@ function App() {
                         </div>
                     </button>
 
-                    <button>
+                            <button onClick={() => setKebab({ ...kebab, pain: "galette" })}>
                         <div className="Ingredient-card">
                             <img src="https://i.imgur.com/KOQEGt7.jpeg"
                                 alt=" Galette "
@@ -82,7 +106,7 @@ function App() {
                         <p>
                             Salade, tomates, oignons
         </p>
-                        <button>
+                            <button onClick={()=>handleGarniture("salade")}>
                             <div className="Ingredient-card">
                                     <img src="https://i.imgur.com/p5mRjny.jpg"
                                     alt=" Salade "
